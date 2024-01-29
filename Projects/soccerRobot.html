@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Soccer Playing Robot</title>
+        <link rel="stylesheet" href="/PersonalWebsite/CSS/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+    </head>
+    <body>
+
+        <nav>
+            <input type="checkbox" id="click"> 
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul>
+                <li> <a href="/PersonalWebsite/index.html" class="tabs" > Back </a> </li>
+                <li> <a href="lineRobot.html" class="tabs"> &larr; </a> </li>
+                <li> <a href="motionPlanningSample.html" class="tabs"> &rarr; </a> </li>
+            </ul>
+        </nav>
+
+        <div class="projectFull">
+            <h1>Soccer Playing Robot – ME 588 World Cup</h1>
+
+            <div class="picpj">
+                <img class="picpj_child" src="/PersonalWebsite/Projects/soccerRobot/robot.jpg" width="315" height="424" alt="picture of project">
+                <img class="picpj_child" src="/PersonalWebsite/Projects/soccerRobot/comp.jpg" width="320" height="424" alt="picture of project">
+                <img class="picpj_child" src="/PersonalWebsite/Projects/soccerRobot/class.jpg" width="640" height="424" alt="picture of project">
+            </div>
+
+            <h2> Project Description </h2>
+            <div class="textPj">
+                <p>
+                    This robot is able to autonomously seek out, acquire, aim, and launch a ball into a goal. The team settled on a control scheme using ultrasonic sensors for position and orientation control, as well as for detection of the ball. This combined with a mechanum drive train allowed the robot to operate entirely on a cartesian grid, simplifying the searching and launching logic. A manually primed, spring powered launcher was used for its high repeatability and power density, combined with a funnel based collector.
+                </p>
+                <p>
+                    The system was largely successful in achieving these goals, successfully acquiring and firing the ball. The seeking algorithm worked well, and the launcher was extremely reliable and effective. The largest reoccurring challenge, and opportunity for future improvement is improving the stability of the -position control system, which performed acceptably, but due to interference between ultrasonic sensors, and noise in the system, was not as reliable as desired. Future work could include the use of more precise, higher end range sensors, such as LIDAR or infrared.
+                </p>    
+            </div>
+
+            <h2>Media</h2>
+            <video class="picpj" width="480" height="270" controls>
+                <source src="/PersonalWebsite/Projects/soccerRobot/ME588- SoccerPlayingRobot.MOV">
+              Your browser does not support the video tag.
+            </video> 
+            <h2>Reports</h2>
+            <div class="textPj"> 
+                <p>
+                    Open the full project report by clicking:
+                    <a href="/PersonalWebsite/Projects/soccerRobot/Final Report.pdf" target="_blank"> 
+                        <img class="doc" src="/PersonalWebsite/images/doc.png" width=40px height=40px alt="doc">
+                    </a>
+                </p>
+
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
+

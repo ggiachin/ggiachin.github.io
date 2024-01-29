@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Motion Planning: Sampling based Methods</title>
+        <link rel="stylesheet" href="/PersonalWebsite/CSS/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+    </head>
+    <body>
+      <nav>
+        <input type="checkbox" id="click"> 
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li> <a href="/PersonalWebsite/index.html" class="tabs" > Back </a> </li>
+            <li> <a href="soccerRobot.html" class="tabs"> &larr; </a> </li>
+            <li> <a href="motionPlanningML.html" class="tabs"> &rarr; </a></li>
+        </ul>
+      </nav>
+
+      <div class="projectFull">
+        <h1>Motion Planning using Sampling Based Methods</h1>
+        <div class="picpj">
+          <img class="graphs" src="/PersonalWebsite/Projects/motionPlanS/RRT.png" width="508" height="400" alt="picture of project">
+          <img class="graphs" src="/PersonalWebsite/Projects/motionPlanS/rrtstar.png" width="508" height="400" alt="picture of project">  
+        </div>
+
+        <h2> Project Description </h2>
+        <div class="textPj">
+          <p>This project focuses on implementing sampling-based motion planning algorithms in 3D and 2D envinronments.</p>
+        
+          <p>For the 3D environments, Rapidly-exploring Random Tree (RRT) and Bi-directional Rapidly-exploring Random Tree (BiRRT) algorithms are applied to a simplified 3-DOF UR5 robot arm manipulator. The goal is for the end link of the arm to go from its initial position to the target position, without colliding with obstacles in the environment. This was simulated in pybullet.</p>
+          
+          <p>For the 2D environments, Rapidly-exploring Random Tree (RRT) and Rapidly-exploring Random Tree star (RRT*) algorithms are applied to three different robot systems: 2D point-mass, circular rigid body, and a rectangular rigid body. Each robot system needs to reach the target location, without colliding with the obstacles in the environment. </p>
+        </div>
+
+        <h2>Media</h2>
+        <h3>3D Environment: BiRRT w/smoothing</h3>
+
+        <!-- <video width=480 height=300 controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/birrt_3d.mp4">
+          Your browser does not support the video tag.
+        </video> 
+
+        <video width=480 height=300 controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/Smoothing_3D.mp4">
+          Your browser does not support the video tag.
+        </video>  -->
+
+        <div class="videoContainer">
+          <video class="vidP" width=50% height=50% controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/RRT_3d.mp4">
+          Your browser does not support the video tag.
+          </video> 
+          <p class="vidC">BiRRT w/smoothing will always generate a solution (path) if one exists and is much faster and smoother than the traditional RRT.</p>
+        </div>
+
+  
+        <h3>2D Environment: RRT vs RRTStar</h3>
+        <div class="videoContainer">
+          <video class="vidP" width=50% height=50% controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/rrt_point.webm">
+            Your browser does not support the video tag.
+          </video> 
+          <p class="vidC">RRT finds a path, but does not return the most optimal one</p>
+
+        </div>
+
+        <div class="videoContainer">
+          <video class="vidP" width=50% height=50% controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/rrtstar_point.webm">
+            Your browser does not support the video tag.
+          </video> 
+          <p class="vidC">RRT* is slower than RRT, but it is guaranteed to return the shortest path</p>
+        </div>
+
+
+        <!-- <video width=480 height=300 controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/rrt_circle.webm">
+          Your browser does not support the video tag.
+        </video> 
+        <video width=480 height=300 controls>
+            <source src="/PersonalWebsite/Projects/motionPlanS/rrtstar_circle.webm">
+          Your browser does not support the video tag.
+        </video>  -->
+
+
+
+      <h2>Reports</h2>
+      <div class="textPj">
+        <p>
+          Open the full project report by clicking:
+          <a href="/PersonalWebsite/Projects/motionPlanS/Report.pdf" target="_blank"> 
+              <img class="doc" src="/PersonalWebsite/images/doc.png" width=40px height=40px alt="doc">
+          </a>
+        </p>
+
+      </div>
+    </div>
+
+    </body>
+
+</html>
+

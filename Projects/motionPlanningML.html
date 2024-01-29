@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Learning-Based Motion Planning</title>
+        <link rel="stylesheet" href="/PersonalWebsite/CSS/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="click"> 
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li> <a href="/PersonalWebsite/index.html" class="tabs" > Back </a> </li>
+                <li> <a href="motionPlanningSample.html" class="tabs"> &larr; </a> </li>
+                <li> <a href="hotspotDetector.html" class="tabs" > &rarr; </a></li>
+            </ul>
+        </nav>
+
+        <div class="projectFull">
+            <h1>Learning-Based Motion Planning</h1>
+
+            <div class="picpj">
+                <img class="graphs" src="motionPlanML/2d.png" width="520" height="426" alt="picture of project">
+                <img class="graphs" src="motionPlanML/3d_0.png" width="520" height="426" alt="picture of project">
+            </div>
+
+
+            <h2> Project Description </h2>
+            <div class="textPj">
+                <p>This project is an introduction to machine learning for motion planning (<a href="https://sites.google.com/view/mpnet/home">MPNet</a>). MPNet was applied to a 2D and 3D dataset (with several training and testing paths in different environments). Similarly to the previous project, a start and end goal is provided and the objective is to produce a collision free path.</p> 
+
+                <p>For the 2D dataset, a trained model was provided; this was tested and its successful results were visualized and compared to paths generated with RRT*. </p>
+
+                <p> For the 3D dataset, the model was trained and tuned to achieve success rates higher than 90%. Moreover, the collision checked was modify to handle 3D cases. The resulting paths were also visualized and compared to a 3D version of RRT*. 
+                </p>
+
+                <p>Moreover, the effect of techniques such as dropout (adds stochasticity to model) and lazy vertex contraction (removes redundant states and smooths out the path) were analyzed to see their effect on the success rate and computation time.</p>
+            </div>
+        
+            <h2>Reports</h2>
+            <div class="textPj">
+                <p>
+                    Open the full project report by clicking:
+                    <a href="/PersonalWebsite/Projects/motionPlanML/A3.pdf" target="_blank"> 
+                        <img class="doc" src="/PersonalWebsite/images/doc.png" width=40px height=40px alt="doc">
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+

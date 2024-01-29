@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Autonomous Navigation</title>
+        <link rel="stylesheet" href="/PersonalWebsite/CSS/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="click"> 
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li> <a href="/PersonalWebsite/index.html" class="tabs" > Back </a> </li>
+                <li> <a href="hotspotDetector.html" class="tabs"> &larr; </a> </li>
+            </ul>
+        </nav>
+
+        <div class="projectFull">
+            <h1>Autonomous Navigation</h1>
+            <div class="picpj">
+                <img src="/PersonalWebsite/Projects/autSys/task1.png" width="668" height="468" alt="picture of project">
+                <img src="/PersonalWebsite/Projects/autSys/task2.png" width="342" height="469" alt="picture of project">
+            </div>
+
+            <h2> Project Description </h2>
+            <div class="textPj">
+
+                <p>
+                    In this project, I used ROS and Gazebo to automate a Turtlebot3 Waffle Pi to perform three taks: (1) autonomous exploration, (2) navigation in static environment, and (3) navigation in dynamic environment. 
+
+                </p>
+
+                <p>
+                    The first part is to explore an area autonomously and generate a map by using a wall following algorithm and the turtlebot's built in SLAM techniques.  Navigating autonomously the entire area had to be done under 10 minutes. Moreover, the program had to be robust enough to work on any given space. 
+                </p>
+
+                <p>
+                    The second part consisted on navigating that area to an input goal location using the map generated in the first part. For this, the map was converted from pixels to meters, A star algorithm was implemented to go from the initial to goal pose, and a PID was introduced and tuned to follow the path precisely. 
+                </p>
+
+                <p>
+                    The third and final part adds a new variable to the second milestone: moving objects. The goal is to navigate from initial pose to end pose, using the map generated, and avoid the moving green trash cans. For this, the turtlebot's front camera was used; these images were processed to detect green. MOreover, the PID controller was modified to bring the robot to a stop whenever the trash cans where detected and move again once the way is clear.  
+                </p>
+            </div>
+
+            <h2>Media</h2>
+
+            <div class="videoContainer">
+                <video class="vidP" width=50% height=50% controls>
+                <source src="/PersonalWebsite/Projects/autSys/Task2.mp4">
+                    Your browser does not support the video tag.
+                </video> 
+                <p class="vidC">Task 2: Autonomous Static Navigation</p>
+            </div>
+
+            <div class="videoContainer">
+                <video class="vidP" width=50% height=50% controls>
+                <source src="/PersonalWebsite/Projects/autSys/Task3.mp4">
+                    Your browser does not support the video tag.
+                </video> 
+                <p class="vidC">Task 3: Autonomous Dynamic Navigation</p>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
+
