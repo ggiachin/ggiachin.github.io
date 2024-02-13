@@ -126,7 +126,7 @@ h2{
     background:  rgba(253, 233, 234, 0.703);
     width: 100vw;
     height: 100vh;
-    height: 90%;
+    height: 80%;
     padding-top: 20px;
     margin: 20px 0 0 0;
     padding-left: 8px;
@@ -145,8 +145,8 @@ h2{
 }
 
 .introimage img{
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 45%;
+    max-height: 45%;
     vertical-align: middle;
     margin-bottom: 10px;
     border-radius: 2.5%;
